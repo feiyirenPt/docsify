@@ -41,6 +41,7 @@ jobs:
           git config --global user.name "jyf-111"
 
           mkdir -p source/_port/
+          shopt -s extglob
           mv !(source|scaffolds|.git|.github|*.md|*.py|.nojekyll|index.html) source/_port/
 
           npm install hexo-cli -g
