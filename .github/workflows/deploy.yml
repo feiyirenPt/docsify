@@ -42,7 +42,7 @@ jobs:
 
           mkdir -p source/_port/
           shopt -s extglob
-          mv !(source|scaffolds|.git|.github|*.md|*.py|.nojekyll|index.html) source/_port/
+          mv !(source|scaffolds|.git|.github|.nojekyll|*.md|*.py|*.html|*.yml|*.json) source/_port/
 
           npm install hexo-cli -g
           npm install
