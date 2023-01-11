@@ -1,7 +1,7 @@
 ---
-created: 2023-01-09T17:16:29 (UTC +08:00)
-tags: [C++]
-source: https://www.techiedelight.com/zh/convert-c-style-array-into-std-array-container/
+created: 2023-01-09T17:16:29 (UTC +08:00)  
+tags: [C++]    
+source: https://www.techiedelight.com/zh/convert-c-style-array-into-std-array-container/  
 ---
 
 # 在 C++ 中将 C 样式数组转换为 std::array 容器

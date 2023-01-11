@@ -33,6 +33,7 @@
     - [source.md](.\computer\source.md)
     - [windowsdefender.md](.\computer\windowsdefender.md)
     - [windows链接.md](.\computer\windows链接.md)
+- [devlog.md](.\devlog.md)
 - **hexo**
     - [githubaction.md](.\hexo\githubaction.md)
 - **java**

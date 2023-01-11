@@ -22,25 +22,3 @@ jobs:
           DEPLOY_KEY: ${{secrets.DEPLOY_KEY}} 
         with: 
           args: "-avzr --delete  jyf@www.wycjyf.live:/var/www/docsify/"
-
-      - name: Setup Hexo
-        env:
-          ACTION_DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 700 ~/.ssh
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan www.wycjyf.live >> ~/.ssh/known_hosts
-          git config --global user.email "jyfserendipity@outlook.com"
-          git config --global user.name "jyf-111"
-          mkdir -p source/_posts/
-          shopt -s extglob
-          mv !(source|scaffolds|.git|.github|.nojekyll|*.md|*.py|*.html|*.yml|*.json) source/_posts/
-          npm install hexo-cli -g
-          npm install
-      - name: Deploy
-        run: |
-          hexo clean
-          hexo generate
-          hexo deploy
