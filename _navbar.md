@@ -1,4 +1,5 @@
 * [Home](/)
-* [excalidraw](https://www.wycjyf.live/excalidraw/)
+* [devlog](devlog.md)
 * [memos](https://www.wycjyf.live:4230/)
+* [excalidraw](https://www.wycjyf.live/excalidraw/)
 * [football](https://www.wycjyf.live/football/)
