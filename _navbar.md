@@ -1,5 +1,4 @@
-* home
-	* [Home](/)
+* [Home](/)
 
 * link
 	* [excalidraw](https://www.wycjyf.live/excalidraw/)
