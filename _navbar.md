@@ -1,2 +1,2 @@
 * [Home](/)
-* [www.wycjyf.live](https://www.wycjyf.live)
+* [football](https://www.wycjyf.live/football/)

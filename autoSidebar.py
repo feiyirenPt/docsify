@@ -23,15 +23,19 @@ def dirList(f, path, space):
         filepath = os.path.join(path, filename)
         space += 4
         if os.path.isdir(filepath) and judgeDir(filepath):
+            print(" "*space + "- **"+os.path.basename(filepath)+"**\n", end="")
             f.write(" "*space + "- **"+os.path.basename(filepath)+"**\n")
             dirList(f, filepath, space)
         else:
             filename = os.path.basename(filepath)
             if judgeFile(filename):
+                print(" "*space +
+                      "- ["+os.path.splitext(os.path.basename(filepath))[0]+"](" + filepath + ")\n", end="")
                 f.write(" "*space +
-                        "- ["+os.path.basename(filepath)+"](" + filepath + ")\n")
+                        "- ["+os.path.splitext(os.path.basename(filepath))[0]+"](" + filepath + ")\n")
         space -= 4
 
 
-with open("_sidebar.md", "w", encoding='UTF-8') as f:
-    dirList(f, '.', -4)
+if '__main__':
+    with open("_sidebar.md", "w", encoding='UTF-8') as f:
+        dirList(f, '.', -4)
