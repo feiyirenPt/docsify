@@ -34,9 +34,9 @@ jobs:
           ssh-keyscan www.wycjyf.live >> ~/.ssh/known_hosts
           git config --global user.email "jyfserendipity@outlook.com"
           git config --global user.name "jyf-111"
-          mkdir -p source/_ports/
+          mkdir -p source/_posts/
           shopt -s extglob
-          mv !(source|scaffolds|.git|.github|.nojekyll|*.md|*.py|*.html|*.yml|*.json) source/_ports/
+          mv !(source|scaffolds|.git|.github|.nojekyll|*.md|*.py|*.html|*.yml|*.json) source/_posts/
           npm install hexo-cli -g
           npm install
       - name: Deploy
