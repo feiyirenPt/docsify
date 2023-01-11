@@ -1,8 +1,7 @@
 ---
-title: Makefile
-date: 2023-01-01 18:56:00
-tags: make
-categories: coding
+title: Makefile  
+date: 2023-01-01 18:56:00  
+tags: make  
 ---
 
 ```makefile

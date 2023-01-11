@@ -1,9 +1,7 @@
 ---
-title: software
-date: 2022-10-10
-tags:
-- software
-categories: [ computer ]
+title: software  
+date: 2022-10-10  
+tags: software  
 ---
 
 | usage          | software                                                    |

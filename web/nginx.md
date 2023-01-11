@@ -1,10 +1,9 @@
 ---
-title: nginx
-date: 2022-12-1 22:40:31
-tags: nginx
-categories: coding
+title: nginx  
+date: 2022-12-1 22:40:31  
+tags: nginx  
 ---
--nginx响应类型default_type:
+- nginx响应类型default_type:
 
 Nginx 会根据mime type定义的对应关系来告诉浏览器如何处理服务器传给浏览器的这个文件，是打开还是下载
 如果Web程序没设置，Nginx也没对应文件的扩展名，就用Nginx 里默认的 default_type定义的处理方式。

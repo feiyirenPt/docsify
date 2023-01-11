@@ -1,8 +1,7 @@
 ---
-title: packer.nvim
-date: 2022-12-21 20:43:09
-tags: neovim
-categories: neovim
+title: packer.nvim  
+date: 2022-12-21 20:43:09  
+tags: neovim  
 ---
 
 ```lua

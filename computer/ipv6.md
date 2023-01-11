@@ -1,8 +1,7 @@
 ---
-title: ipv6
-date: 2022-12-13 19:15:37
-tags: ipv6
-categories: computer
+title: ipv6  
+date: 2022-12-13 19:15:37  
+tags: ipv6  
 ---
 
 ### 开启ipv6有三种方式:

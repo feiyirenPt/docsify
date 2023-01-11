@@ -1,8 +1,7 @@
 ---
-title: vps误删.ssh无法登录
-date: 2022-10-05 21:22:22
+title: vps误删.ssh无法登录  
+date: 2022-10-05 21:22:22  
 tags: azure
-categories: coding
 ---
 
 ## 情形:

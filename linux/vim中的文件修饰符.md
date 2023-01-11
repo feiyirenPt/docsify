@@ -1,8 +1,7 @@
 ---
-title: vim中的文件修饰符
-date: 2022-11-05 11:16:34
-tags: vim
-categories: computer
+title: vim中的文件修饰符  
+date: 2022-11-05 11:16:34  
+tags: vim  
 ---
 
 - :p 扩展为完整的路径

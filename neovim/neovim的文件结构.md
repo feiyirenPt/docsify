@@ -1,12 +1,11 @@
 ---
-title: neovim的文件结构
-date: 2022-12-21 20:32:47
-tags: neovim
-categories: neovim
+title: neovim的文件结构  
+date: 2022-12-21 20:32:47  
+tags: neovim  
 ---
 
 ## neovim
-- neovim是vim8的fork版本
+- neovim是vim7的fork版本
 - neovim是现代化的编辑器,作为我的主力编辑器
 - neovim使用lua做配置,兼容vimscript
 

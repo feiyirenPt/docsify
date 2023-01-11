@@ -1,8 +1,7 @@
 ---
-title: ffmpeg视频转码
-date: 2022-10-29 23:23:31
-tags: ffmpeg opencv
-categories: coding
+title: ffmpeg视频转码  
+date: 2022-10-29 23:23:31  
+tags: ffmpeg opencv  
 ---
 
 视频编码格式为 H264

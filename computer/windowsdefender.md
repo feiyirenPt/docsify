@@ -1,9 +1,7 @@
-title: Windows Defender
-date: 2022-10-9
-tags:
-- defender
-- path
-categories: [ computer ]
+---
+title: Windows Defender  
+date: 2022-10-9  
+tags: [defender,path]  
 ---
 1. - 通过注册表命令方式来 禁止Windows Defender开机自动运行和彻底关闭它.
    

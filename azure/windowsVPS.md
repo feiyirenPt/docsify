@@ -1,8 +1,7 @@
 ---
-title: windowsVPS安装openssh
-date: 2022-10-06 13:06:22
+title: windowsVPS安装openssh  
+date: 2022-10-06 13:06:22  
 tags: azure
-categories: coding
 ---
 
 - 查看ssh

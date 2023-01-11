@@ -11,7 +11,7 @@ def judgeFile(filename):
 
 
 def judgeDir(filepath):
-    if filepath.startswith(".\\.git") or filepath.startswith(".\\scaffolds"):
+    if filepath.startswith(".\\.git"):
         return False
 
     return True

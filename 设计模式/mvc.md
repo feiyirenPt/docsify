@@ -1,9 +1,7 @@
 ---
-title: mvc
-date: 2022-10-25 20:14:48
-tags:
-- 设计模式
-categories: [ coding ]
+title: mvc  
+date: 2022-10-25 20:14:48  
+tags: 设计模式  
 ---
 [参考链接](https://zhuanlan.zhihu.com/p/35680070)
 ---

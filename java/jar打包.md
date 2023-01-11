@@ -1,8 +1,7 @@
 ---
-title: jar打包
-date: 2022-11-14 22:27:40
-tags: java
-categories: coding
+title: jar打包  
+date: 2022-11-14 22:27:40  
+tags: java  
 ---
 
 ```bash

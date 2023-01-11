@@ -1,9 +1,7 @@
 ---
-title: opencv
-date: 2022-10-9
-tags:
-- opencv
-categories: [ coding ]
+title: opencv  
+date: 2022-10-9  
+tags: [ opencv ]  
 ---
 
 - VideoWriter 记得release

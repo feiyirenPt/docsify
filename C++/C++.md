@@ -1,8 +1,7 @@
-title: C++的注意事项
-date: 2022-10-11
-tags:
-- C++
-categories: [ coding ]
+---
+title: C++的注意事项  
+date: 2022-10-11  
+tags: C++  
 ---
 - 二进制输入输出文件记得记得ios::binary
 

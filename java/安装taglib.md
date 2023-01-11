@@ -1,8 +1,7 @@
 ---
-title: 安装taglib
-date: 2022-11-03 21:36:57
-tags: java
-categories: coding
+title: 安装taglib  
+date: 2022-11-03 21:36:57  
+tags: java  
 ---
 
 [原文链接](https://blog.csdn.net/amiao_2018/article/details/116357125)

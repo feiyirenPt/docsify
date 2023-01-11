@@ -1,8 +1,7 @@
-title: source
-date: 2022-10-9
-tags:
-- source
-categories: [ computer ]
+---
+title: source  
+date: 2022-10-9  
+tags: source  
 ---
 
 https://note.youdao.com/s/SSdkdYQE : java基础笔记

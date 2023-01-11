@@ -1,8 +1,7 @@
 ---
-title: azure虚拟网关
-date: 2022-10-16 23:02:22
+title: azure虚拟网关  
+date: 2022-10-16 23:02:22  
 tags: azure
-categories: coding
 ---
 
 > [微软VPN文档](https://learn.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal)  

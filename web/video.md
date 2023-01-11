@@ -1,8 +1,7 @@
 ---
-title: video
-date: 2022-10-29 23:40:31
-tags: web
-categories: coding
+title: video  
+date: 2022-10-29 23:40:31  
+tags: web  
 ---
 [ 在html中插入图片和视频 ](https://blog.csdn.net/weixin_44093867/article/details/104166514)
 

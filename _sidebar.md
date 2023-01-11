@@ -45,6 +45,7 @@
     - [环境变量.md](.\java\环境变量.md)
 - **linux**
     - [linux.md](.\linux\linux.md)
+    - [shopt -s extglob-pudn.md](.\linux\shopt -s extglob-pudn.md)
     - [ssh.md](.\linux\ssh.md)
     - [vim中的文件修饰符.md](.\linux\vim中的文件修饰符.md)
 - **neovim**
@@ -57,7 +58,7 @@
     - [nginx.md](.\web\nginx.md)
     - [video.md](.\web\video.md)
 - **write**
-    - [PowerShell保存剪贴板图片并构造MarkDown语句.md](.\write\PowerShell保存剪贴板图片并构造MarkDown语句.md)
-    - [搭建个人RSSHub.md](.\write\搭建个人RSSHub.md)
+    - [PowerShell剪贴板.md](.\write\PowerShell剪贴板.md)
+    - [搭建个人RSSHub..md](.\write\搭建个人RSSHub..md)
 - **设计模式**
     - [mvc.md](.\设计模式\mvc.md)

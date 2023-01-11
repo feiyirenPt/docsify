@@ -1,8 +1,7 @@
 ---
-title: ssh
-date: 2022-10-11
-tags: ssh
-categories: [ coding ]
+title: ssh  
+date: 2022-10-11  
+tags: ssh  
 ---
 ## error ssh: connect to host github.com port 22: Connection timed out
 ```config

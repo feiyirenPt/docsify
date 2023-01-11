@@ -1,9 +1,7 @@
 ---
-layout: port
-title: azure做图床
-date: 2022-10-14 22:22:45
+title: azure做图床  
+date: 2022-10-14 22:22:45  
 tags: azure
-categories: coding
 ---
 ## azure > 储存账户 
 ### 储存账户注意打开允许blob公共访问

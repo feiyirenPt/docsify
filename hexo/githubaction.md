@@ -1,8 +1,7 @@
 ---
-title: github action上传服务器失败
-date: 2022-10-13 20:49:45
-tags: github
-categories: coding
+title: github action上传服务器失败  
+date: 2022-10-13 20:49:45  
+tags: github  
 ---
 
 # github action 执行中报错 Invalid key format

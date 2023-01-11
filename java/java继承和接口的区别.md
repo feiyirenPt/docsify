@@ -1,8 +1,7 @@
 ---
-title: java继承和接口的区别
-date: 2022-11-11 09:32:54
-tags: java
-categories: coding
+title: java继承和接口的区别  
+date: 2022-11-11 09:32:54  
+tags: java  
 ---
 
 当使用继承的时候，主要是为了不必重新开发，并且在不必了解实现细节的情况下拥有了父类我所需要的特征。

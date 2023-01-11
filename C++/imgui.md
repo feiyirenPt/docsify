@@ -1,9 +1,7 @@
 ---
-title: imgui
-date: 2022-01-07
-tags:
-- cpp
-categories: [ coding ]
+title: imgui  
+date: 2022-01-07  
+tags: cpp  
 ---
 - text
 ```cpp

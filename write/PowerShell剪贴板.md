@@ -1,3 +1,9 @@
+---
+title: PowerShell保存剪贴板图片并构造MarkDown语句  
+date: 2023-01-11 17:31  
+tags: [powershell]  
+source: https://www.yisu.com/zixun/12904.html  
+---
 ### 原生命令
 ```powershell
 $list = (Get-ClipBoard) -like '*err*'
@@ -121,9 +127,3 @@ git commit -m $lastfile
 git push -u origin master|Out-Null -ErrorAction SilentlyContinue
 #git  rm -r C:/kukisama.github.io/picupdate/
 ```
-### Reference
-[PowerShell保存剪贴板图片并构造MarkDown语句][1]  
-[PowerShell使用剪贴板传递数据和结果][2]
-
-[1]:https://www.yisu.com/zixun/12904.html
-[2]:https://www.pstips.net/using-clipboard-to-transfer-data-and-results.html

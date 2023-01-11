@@ -1,9 +1,7 @@
 ---
-title: sql
-date: 2022-10-9
-tags:
-- sql
-categories: [ coding ]
+title: sql  
+date: 2022-10-9  
+tags: sql  
 ---
 ## win下中文问题
 

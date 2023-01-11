@@ -1,8 +1,7 @@
 ---
-title: azure静态web应用
-date: 2022-10-16 23:08:34
+title: azure静态web应用  
+date: 2022-10-16 23:08:34  
 tags: azure
-categories: coding
 ---
 
 [auzre静态web应用文档](https://learn.microsoft.com/zh-cn/azure/static-web-apps/overview)
