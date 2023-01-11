@@ -6,11 +6,19 @@ tags: github
 
 # github action 执行中报错 Invalid key format
 
-本来以为是[ssh 密钥文件格式不兼容的问题](https://github.com/wlixcc/SFTP-Deploy-Action/issues/1),后来发现 secrets 不能放在 `repo > settings > secrets > Environment secrets` 里面,要放在 `repo > settings > actions > secrets > Repository secrets` 里面,原回答参考
+- 本来以为是[ssh 密钥文件格式不兼容的问题](https://github.com/wlixcc/SFTP-Deploy-Action/issues/1),后来发现 secrets 不能放在 `repo > settings > secrets > Environment secrets` 里面,要放在 `repo > settings > actions > secrets > Repository secrets` 里面,原回答参考
 [github secret key](https://github.com/wlixcc/SFTP-Deploy-Action/issues/1#issuecomment-1073142210)
 
-<details>
-<summary>deploy.yml</summary>
+- tree view
+```
+- .github/
+     - workflow/
+         - deploy.yml
+     - dependabot.yml
+```
+        
+
+- 具体workflow的配置`deploy.yml`
 
 ```yml
 name: Hexo Deploy
@@ -44,7 +52,7 @@ jobs:
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan 20.239.182.249 >> ~/.ssh/known_hosts
+          ssh-keyscan www.wycjyf.live >> ~/.ssh/known_hosts
           git config --global user.email "jyfserendipity@outlook.com"
           git config --global user.name "jyf-111"
           npm install hexo-cli -g
@@ -56,5 +64,13 @@ jobs:
           hexo generate
           hexo deploy
 ```
-
-</details>
+- 依赖自动更新 `dependabot.yml`
+```yml
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 20
+```
