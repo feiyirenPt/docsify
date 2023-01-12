@@ -1,29 +1,54 @@
 {
+	"policy": {
+		"system": {
+			"statsOutboundUplink": false,
+			"statsOutboundDownlink": false
+		}
+	},
 	"log": {
-		"loglevel": "warning"
+		"loglevel": "warning",
+		"access": "",
+		"error": ""
 	},
 	"inbounds": [
 		{
 			"listen": "127.0.0.1",
 			"port": 10808,
 			"protocol": "socks",
-			"domainOverride": [
-				"tls",
-				"http"
-			],
+			"sniffing": {
+				"enabled": true,
+				"destOverride": [
+					"http",
+					"tls"
+				]
+			},
 			"settings": {
 				"auth": "noauth",
-				"udp": true
+				"udp": true,
+				"allowTransparent": false
 			}
 		},
 		{
 			"listen": "127.0.0.1",
 			"port": "10809",
-			"protocol": "http"
+			"protocol": "http",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": [
+					"http",
+					"tls"
+				]
+			},
+			"settings": {
+				"auth": "noauth",
+				"udp": true,
+				"allowTransparent": false
+			}
 		}
 	],
 	"outbounds": [
 		{
+			"tag": "HK",
 			"protocol": "vmess",
 			"settings": {
 				"vnext": [
@@ -33,19 +58,10 @@
 						"users": [
 							{
 								"id": "b831381d-6324-4d53-ad4f-8cda48b30811",
-								"encryption": "none",
-								"level": 0
-							}
-						]
-					},
-					{
-						"address": "jyfwin.japaneast.cloudapp.azure.com",
-						"port": 80,
-						"users": [
-							{
-								"id": "b831381d-6324-4d53-ad4f-8cda48b30811",
-								"encryption": "none",
-								"level": 0
+								"mux": {
+									"enabled": false,
+									"concurrency": -1
+								}
 							}
 						]
 					}
@@ -55,60 +71,136 @@
 				"network": "ws",
 				"security": "tls",
 				"tlsSettings": {
-					"serverName": "www.wycjyf.live"
+					"serverName": "www.wycjyf.live",
+					"allowInsecure": false
 				},
 				"wsSettings": {
-					"path": "/iamff/"
+					"path": "/iamff/",
+					"headers": {
+						"Host": "www.wycjyf.live"
+					}
 				}
 			},
-			"tag": "proxy"
+			"mux": {
+				"enabled": false,
+				"concurrency": -1
+			}
 		},
 		{
-			"protocol": "freedom",
+			"tag": "JP",
+			"protocol": "vmess",
+			"settings": {
+				"vnext": [
+					{
+						"address": "jyfwin.japaneast.cloudapp.azure.com",
+						"port": 80,
+						"users": [
+							{
+								"id": "b831381d-6324-4d53-ad4f-8cda48b30811",
+								"alterId": 0,
+								"email": "jyfserendipity@outlook.com",
+								"security": "auto"
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/iamff/",
+					"headers": {
+						"Host": "jyfwin.japaneast.cloudapp.azure.com"
+					}
+				}
+			},
+			"mux": {
+				"enabled": false,
+				"concurrency": -1
+			}
+		},
+		{
 			"tag": "direct",
+			"protocol": "freedom",
 			"settings": {}
 		},
 		{
-			"protocol": "blackhole",
 			"tag": "blackhole",
+			"protocol": "blackhole",
 			"settings": {}
 		}
 	],
+	"observatory": {
+		"subjectSelector":[
+			"HK",
+			"JP"
+		],
+		"probeInterval":"10m"
+	},
+	"stats": {},
+	"api": {
+		"tag": "api",
+		"services": [
+			"StatsService"
+		]
+	},
 	"routing": {
-		"strategy": "rules",
-		"settings": {
-			"domainStrategy": "Asls",
-			"rules": [
-				{
-					"domain": [
-						"domain:openai.com"
-					],
-					"type": "field",
-					"outboundTag": "proxy"
-				},
-				{
-					"domain": [
-						"domain:amazon.com",
-						"domain:microsoft.com",
-						"domain:taobao.com",
-						"domain:jd.com",
-						"geosite:cn"
-					],
-					"ip": [
-						"geoip:cn"
-					],
-					"type": "field",
-					"outboundTag": "direct"
-				},
-				{
-					"domain": [
-						"googeadsserving.cn",
-						"baidu.com"
-					],
-					"type": "field",
-					"outboundTag": "blackhole"
+		"domainStrategy": "IPIfNonMatch",
+		"balancers": [
+			{
+				"tag": "balancer",
+				"selector": [
+					"HK",
+					"JP"
+				],
+				"strategy": {
+					"type": "random"	
 				}
-			]
-		}
+			}
+		],
+		"rules": [
+			{
+				"type": "field",
+				"outboundTag": "JP",
+				"domain": [
+					"domain:openai.com"
+				]
+			},
+			{
+				"type": "field",
+				"outboundTag": "direct",
+				"domain": [
+					"geosite:cn",
+					"geosite:private",
+					"geosite:adobe",
+					"geosite:microsoft",
+					"geosite:msn",
+					"geosite:apple",
+					"domain:amazon.com",
+					"domain:taobao.com",
+					"domain:jd.com"
+				],
+				"ip": [
+					"geoip:private",
+					"geoip:cn",
+					"ext:geoip-only-cn-private.dat:cn",
+					"ext:geoip-only-cn-private.dat:private"
+				]
+			},
+			{
+				"type": "field",
+				"outboundTag": "blackhole",
+				"domain": [
+					"geosite:category-ads-all",
+					"domain:googeadsserving.cn",
+					"domain:baidu.com"
+				]
+			},
+			{
+				"type": "field",
+				"network": "tcp,udp",
+				"balancerTag": "balancer"
+			}
+		]
 	}
 }
