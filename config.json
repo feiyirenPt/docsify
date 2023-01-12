@@ -1,0 +1,130 @@
+{
+	"log": {
+		"loglevel": "warning",
+		"access": "C:\\Users\\jyf\\scoop\\apps\\v2ray\\current\\access.log",
+		"error": "C:\\Users\\jyf\\scoop\\apps\\v2ray\\current\\error.log"
+	},
+	"inbounds": [
+		{
+			"listen": "127.0.0.1",
+			"port": 10808,
+			"protocol": "socks",
+			"domainOverride": [
+				"tls",
+				"http"
+			],
+			"settings": {
+				"auth": "noauth",
+				"udp": true
+			}
+		},
+		{
+			"listen": "127.0.0.1",
+			"port": "10809",
+			"protocol": "http"
+		}
+	],
+	"outbounds": [
+		{
+			"protocol": "vmess",
+			"settings": {
+				"vnext": [
+					{
+						"address": "www.wycjyf.live",
+						"port": 443,
+						"users": [
+							{
+								"id": "b831381d-6324-4d53-ad4f-8cda48b30811",
+								"encryption": "none",
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "www.wycjyf.live"
+				},
+				"wsSettings": {
+					"path": "/iamff/"
+				}
+			},
+			"tag": "HongKong"
+		},
+		{
+			"protocol": "vmess",
+			"settings": {
+				"vnext": [
+					{
+						"address": "jyfwin.japaneast.cloudapp.azure.com",
+						"port": 80,
+						"users": [
+							{
+								"id": "b831381d-6324-4d53-ad4f-8cda48b30811",
+								"encryption": "none",
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/iamff/"
+				}
+			},
+			"tag": "Japan"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "direct",
+			"settings": {}
+		},
+		{
+			"protocol": "blackhole",
+			"tag": "blackhole",
+			"settings": {}
+		}
+	],
+	"routing": {
+		"strategy": "rules",
+		"settings": {
+			"domainStrategy": "Asls",
+			"rules": [
+				{
+					"domain": [
+						"domain:openai.com"
+					],
+					"type": "field",
+					"outboundTag": "Japan"
+				},
+				{
+					"domain": [
+						"domain:amazon.com",
+						"domain:microsoft.com",
+						"domain:taobao.com",
+						"domain:jd.com",
+						"geosite:cn"
+					],
+					"ip": [
+						"geoip:cn"
+					],
+					"type": "field",
+					"outboundTag": "direct"
+				},
+				{
+					"domain": [
+						"googeadsserving.cn",
+						"baidu.com"
+					],
+					"type": "field",
+					"outboundTag": "blackhole"
+				}
+			]
+		}
+	}
+}
