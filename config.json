@@ -178,7 +178,8 @@
 					"geosite:apple",
 					"domain:amazon.com",
 					"domain:taobao.com",
-					"domain:jd.com"
+					"domain:jd.com",
+					"domain:wycjyf.live"
 				],
 				"ip": [
 					"geoip:private",
