@@ -1,8 +1,6 @@
 {
 	"log": {
-		"loglevel": "warning",
-		"access": "C:\\Users\\jyf\\scoop\\apps\\v2ray\\current\\access.log",
-		"error": "C:\\Users\\jyf\\scoop\\apps\\v2ray\\current\\error.log"
+		"loglevel": "warning"
 	},
 	"inbounds": [
 		{
