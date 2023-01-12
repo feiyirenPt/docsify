@@ -39,25 +39,7 @@
 								"level": 0
 							}
 						]
-					}
-				]
-			},
-			"streamSettings": {
-				"network": "ws",
-				"security": "tls",
-				"tlsSettings": {
-					"serverName": "www.wycjyf.live"
-				},
-				"wsSettings": {
-					"path": "/iamff/"
-				}
-			},
-			"tag": "HongKong"
-		},
-		{
-			"protocol": "vmess",
-			"settings": {
-				"vnext": [
+					},
 					{
 						"address": "jyfwin.japaneast.cloudapp.azure.com",
 						"port": 80,
@@ -73,11 +55,15 @@
 			},
 			"streamSettings": {
 				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "www.wycjyf.live"
+				},
 				"wsSettings": {
 					"path": "/iamff/"
 				}
 			},
-			"tag": "Japan"
+			"tag": "proxy"
 		},
 		{
 			"protocol": "freedom",
@@ -100,7 +86,7 @@
 						"domain:openai.com"
 					],
 					"type": "field",
-					"outboundTag": "Japan"
+					"outboundTag": "proxy"
 				},
 				{
 					"domain": [
