@@ -26,7 +26,6 @@
     - [select多路复用-md](.\C++\select多路复用-md.md)
     - [在C++中将C样式数组转换为stdarray容器](.\C++\在C++中将C样式数组转换为stdarray容器.md)
     - [快写](.\C++\快写.md)
-- **collect**
 - **computer**
     - [ipv6](.\computer\ipv6.md)
     - [proxy](.\computer\proxy.md)

@@ -16,7 +16,7 @@ jobs:
         with:
           ref: master
 
-      - name: Deploy
+      - name: generate sidebar
         run: |
           python autoSidebar.py
 
