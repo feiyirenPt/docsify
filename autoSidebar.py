@@ -1,5 +1,12 @@
 import os
 
+if os.name=='posix':
+    separter = './'
+elif os.name=='nt':
+    separter = '.\\'
+else:
+    print("error platform")
+
 
 def judgeFile(filename):
     if filename.startswith("_") or filename.startswith("."):
@@ -11,7 +18,7 @@ def judgeFile(filename):
 
 
 def judgeDir(filepath):
-    if filepath.startswith(".\\.git"):
+    if filepath.startswith(separter + ".git") or filepath.startswith(separter + ".obsidian"):
         return False
 
     return True
