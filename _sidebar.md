@@ -18,7 +18,6 @@
         - [ffmpeg](.\C++\opencv\ffmpeg.md)
         - [opencv](.\C++\opencv\opencv.md)
     - **qt**
-        - [asio](.\C++\qt\asio.md)
         - [cmake](.\C++\qt\cmake.md)
         - [qt](.\C++\qt\qt.md)
         - [vim写qt](.\C++\qt\vim写qt.md)

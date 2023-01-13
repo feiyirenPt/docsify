@@ -161,47 +161,40 @@
 		"rules": [
 			{
 				"type": "field",
-				"outboundTag": "JP",
-				"domain": [
-					"domain:openai.com"
-				]
-			},
-			{
-				"type": "field",
-				"outboundTag": "direct",
-				"domain": [
-					"geosite:cn",
-					"geosite:private",
-					"geosite:adobe",
-					"geosite:microsoft",
-					"geosite:msn",
-					"geosite:apple",
-					"domain:amazon.com",
-					"domain:taobao.com",
-					"domain:jd.com",
-					"domain:wycjyf.live"
-				],
-				"ip": [
-					"geoip:private",
-					"geoip:cn",
-					"ext:geoip-only-cn-private.dat:cn",
-					"ext:geoip-only-cn-private.dat:private"
-				]
-			},
-			{
-				"type": "field",
 				"outboundTag": "blackhole",
 				"domain": [
 					"geosite:category-ads-all",
-					"domain:googeadsserving.cn",
-					"domain:baidu.com"
+					"googeadsserving.cn",
+					"baidu.com"
 				]
 			},
 			{
 				"type": "field",
-				"network": "tcp,udp",
-				"balancerTag": "balancer"
+				"outboundTag": "JP",
+				"domain": [
+					"openai.com"
+				]
+			},
+            {
+				"type": "field",
+                "outboundTag": "direct",
+				"domain": [
+                    "geosite:cn",
+                    "domain:azure.com"
+				]
+			},
+            {
+				"type": "field",
+                "balancerTag": "balancer",
+				"domain": [
+                    "geosite:geolocation-!cn"
+				]
+			},
+            {
+				"type": "field",
+				"outboundTag": "direct",
+                "network": "tcp,udp"
 			}
-		]
-	}
+        ]
+    }
 }
