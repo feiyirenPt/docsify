@@ -17,7 +17,6 @@ Port 443
     cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_key
 
 ## SSH 命令的三种代理功能（-L/-R/-D） 
-<!-- more -->
 - 正向代理（-L）：相当于 iptable 的 port forwarding
 - 反向代理（-R）：相当于 frp 或者 ngrok
 - socks5 代理（-D）：相当于 ss/ssr
@@ -61,7 +60,6 @@ HostA 上启动一个 PortA 端口，通过 HostB 转发到 HostC:PortC上，在
 
 socks5 代理（-D）其实是可以代替 ss/ssr 的，区别和上面类似。所以要长久使用，推荐安装对应软件，临时用一下 ssh 挺顺手。
 
-
 [原文链接](https://www.cnblogs.com/cangqinglang/p/12732661.html)
 
 ## autossh
@@ -76,4 +74,21 @@ windows 下使用注意设置 ` $env:AUTOSSH_PATH=C:/Windows/System32/OpenSSH/ss
 - -n 关闭标准输入
 - -N 不执行远程命令
 - -f 后台运行  
-[参考资料](https://www.cnblogs.com/firstlady/p/15120212.html#:~:text=%E4%B8%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E7%94%A8%E4%B8%80%E7%82%B9%EF%BC%8Cssh%20%E5%90%8E%E9%9D%A2%E8%BF%98%E5%8F%AF%E4%BB%A5%E5%8A%A0%E4%B8%8A%EF%BC%9A%20-CqTnN%20%E5%8F%82%E6%95%B0%EF%BC%8C%E6%AF%94%E5%A6%82%EF%BC%9A%20ssh%20-CqTnN%20-D%200.0.,%E5%85%B3%E9%97%AD%E6%A0%87%E5%87%86%E8%BE%93%E5%85%A5%EF%BC%8C%20-N%20%E4%B8%8D%E6%89%A7%E8%A1%8C%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E3%80%82%20%E6%AD%A4%E5%A4%96%E8%A7%86%E9%9C%80%E8%A6%81%E8%BF%98%E5%8F%AF%E4%BB%A5%E5%A2%9E%E5%8A%A0%20-f%20%E5%8F%82%E6%95%B0%EF%BC%8C%E6%8A%8A%20ssh%20%E6%94%BE%E5%88%B0%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E3%80%82)
+[参考资料](https://www.cnblogs.com/firstlady/p/15120212.html)
+
+
+## windows下ssh免密登录
+服务端切换到C:\\ProgramData\\ssh\\下（首次启动sshd后会生成该文件夹），打开sshd_config文件，
+
+修改文件（以下是重点）：
+
+```bash
+确保以下3条没有被注释
+PubkeyAuthentication yes
+AuthorizedKeysFile	.ssh/authorized_keys
+PasswordAuthentication no
+
+确保以下2条有注释掉 重点，这两行要注释
+#Match Group administrators
+#       AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
+```
