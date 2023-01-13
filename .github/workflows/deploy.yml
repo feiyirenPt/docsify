@@ -16,6 +16,10 @@ jobs:
         with:
           ref: master
 
+      - name: Deploy
+        run: |
+          python autoSidebar.py
+
       - name: Deploy to vps
         uses: contention/rsync-deployments@v1.0.0
         env: 
