@@ -1,3 +1,4 @@
+- 2023-01-14 outlook
 - 2023-01-13 自建miniflux rsshub
 - 2023-01-12 docker-compose v2ray负载均衡
 - 2023-01-11 docsify (window server core部署v2ray)
