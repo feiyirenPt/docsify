@@ -4,6 +4,7 @@ date: 2022-12-21 20:43:09
 tags: neovim  
 ---
 
+## packer自动安装
 ```lua
 local fn = vim.fn
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
