@@ -1,8 +1,8 @@
 import os
 
-if os.name=='posix':
+if os.name == 'posix':
     separter = './'
-elif os.name=='nt':
+elif os.name == 'nt':
     separter = '.\\'
 else:
     print("error platform")

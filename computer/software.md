@@ -48,6 +48,7 @@ tags: software
 | rss            | Fluent-Reader  [Focus][3] feeder innoreader rsshub                  |
 | ai             | chatgpt Tome制作ppt） Quillbot(改写文章） Superhuman(起草电子邮件） |
 | 翻译           | fanyi(npm)                                                          |
+| 手机电脑互联   | intel unison                                                        |
 
 [1]: https://xbeibeix.com/api/bilibili/
 [2]: https://docsify.js.org/#/zh-cn/
