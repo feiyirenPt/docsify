@@ -18,7 +18,7 @@ def judgeFile(filename):
 
 
 def judgeDir(filepath):
-    if filepath.startswith(separter + ".git") or filepath.startswith(separter + ".obsidian"):
+    if filepath.startswith(separter + ".git") or filepath.startswith(separter + ".vscode"):
         return False
 
     return True

@@ -20,7 +20,6 @@ tags: ipv6
    - 关闭防火墙(路由器防火墙默认屏蔽ipv6)
 
 #### ipv6地址
-![](https://gitcode.net/jyf_111/imgbed/-/raw/master/pictures/2023/01/5_16_46_56_ipv6.jpg)
 > 第一个是DHCPv6服务器分配的全球单播地址，公网IP，不用作首选通信源地址  
 > 第二个是SLAAC基于硬件标识生成的全球单播地址，公网IP，不用作首选通信源地址  
 > 第三个是SLAAC基于硬件标识生成的唯一本地地址，内网IP，不用作首选通信源地址  
