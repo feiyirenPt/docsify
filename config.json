@@ -164,17 +164,23 @@
 				"outboundTag": "blackhole",
 				"domain": [
 					"geosite:category-ads-all",
-					"googeadsserving.cn",
-					"baidu.com"
+					"domain:googeadsserving.cn"
 				]
 			},
 			{
 				"type": "field",
 				"outboundTag": "JP",
 				"domain": [
-					"openai.com"
+					"domain:openai.com"
 				]
-			},
+            },
+            {
+				"type": "field",
+				"outboundTag": "HK",
+				"domain": [
+					"domain:github.com"
+				]
+            },
             {
 				"type": "field",
                 "outboundTag": "direct",
@@ -187,7 +193,8 @@
 				"type": "field",
                 "balancerTag": "balancer",
 				"domain": [
-                    "geosite:geolocation-!cn"
+                    "geosite:geolocation-!cn",
+                    "domain:telegram.com"
 				]
 			},
             {

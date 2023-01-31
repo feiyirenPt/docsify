@@ -10,11 +10,12 @@ source: https://zhuanlan.zhihu.com/p/395100455
 >现在RSSHub反爬越来越严格了，还有就是RSSHub在国内已经不能使用…所以只有搭建个人RSSHub这一条路了。
 
 # 搭建个人RSShub
-## 免费部署到Heroku
-> heroku 托管app的网站
+## 部署到Heroku
 
 ## 其他部署方法
 -  vps Docker
+- paas
+    - okteto
 
 ## reference
 rssforver: 
