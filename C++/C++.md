@@ -25,3 +25,20 @@ __FUNCTION__
 
 - vector别开太大
   vector.clear不释放内存,得swap
+
+```c++
+inline void write(int x) {
+  if (x < 0) {
+    putchar('-');
+    x = -x;
+  }
+  if (x > 9)
+    write(x / 10);
+  putchar(x % 10 + '0');
+}
+
+int main(int argc, char *argv[]) {
+  write(123);
+  return 0;
+}
+```
