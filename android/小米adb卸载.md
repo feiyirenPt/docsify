@@ -2,8 +2,9 @@
 title: (23 封私信 / 80 条消息) 小米手机用ADB卸载哪些软件不会卡米？ - 知乎  
 date: 2023-01-28 14:52  
 tags: [小米科技,米柚（MIUI）,小米手机]  
-source: https://www.zhihu.com/question/512681245/answer/2320191705?utm_campaign=&utm_medium=social&utm_oi=1270684969300271104&~
+source: https://www.zhihu.com/question/512681245/answer/2320191705?utm_campaign=&utm_medium=social&utm_oi=1270684969300271104&~  
 ---
+
 ## **[MIUI使用ADB彻底关闭系统级广告]**
 
 ## 1. 准备
@@ -11,8 +12,7 @@ source: https://www.zhihu.com/question/512681245/answer/2320191705?utm_campaign=
 MIUI 手机、Windows 电脑、数据线
 **手机做好备份，以防万一**
 
-**ADB 全称 Android Debug Bridge（**[Android 调试桥]），是一个通用命令行工具，可以与模拟器实例或连接的 Android 设备进行通信。
-
+**ADB 全称 Android Debug Bridge** ([Android 调试桥]），是一个通用命令行工具，可以与模拟器实例或连接的 Android 设备进行通信。
 
 ## 4. 进入开发者模式
 

@@ -3,9 +3,11 @@ title: Docker快速搭建Miniflux+RSSHub
 date: 2023-01-13 10:32  
 tags: [MiniFlux,RSS,RSSHub]  
 source: https://www.jkg.tw/p3246/
+
 ---
 
 # 安装Miniflux +RSSHub
+
 ## 两个服务写在一个`docker-compose.yaml`里面
 
 ```yaml
@@ -69,8 +71,8 @@ volumes:
   redis-data:
 ```
 
-
 ## 还需要下面两条指令初始化Miniflux数据库
+
 ```bash
 # 下面這條指令在日後 Miniflux 大版本升級時候有可能也會用到
 docker-compose exec miniflux /usr/bin/miniflux -migrate
@@ -88,10 +90,8 @@ Miniflux 真的轻巧，登录画面极度简约，只有帐号、密码以及 L
 
 以上全部设定完毕后，即可安全的使用你的专属域名打开你专属的 RSS 阅读器
 
-
 ## reference
+
 - [miniflux的docker-compose.yaml](https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml)
-
-
 
 [fig1]: https://www.jkg.tw/media/2020/03/CleanShot-2020-03-06-at-11.12.55-20200317181631596.png#little

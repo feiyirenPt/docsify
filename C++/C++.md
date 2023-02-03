@@ -1,17 +1,11 @@
 ---
-title: C++的注意事项  
+title: C++
 date: 2022-10-11  
 tags: C++  
 ---
-- 二进制输入输出文件记得记得ios::binary
 
-- 快速初始化
-  列表初始化数组用大括号
-
-- lambda捕获ostream 
-
-<!-- more -->
-关键是，你还没有定义成员，而你这个vector声明是属于类的对象的，你这样等于在没有成员的情况下给这个容器分配了起源，你可以在构造函数里这样初始化它：base():a(10){...}, 使用了初始化列表。如果你想让这个容器属于类，你可以在类里把它声明为静态的，但是定义一定要在类外：vector<int> base::a(10); 当然，也对，vector是动态数组，所以你不用担心关于制定大小这些问题。
+- source
+[查看编译器预处理结果](https://cppinsights.io/)
 
 - 一些宏定义
 ```C++
@@ -21,24 +15,4 @@ __DATE__
 __TIME__  
 __FUNC__
 __FUNCTION__
-```
-
-- vector别开太大
-  vector.clear不释放内存,得swap
-
-```c++
-inline void write(int x) {
-  if (x < 0) {
-    putchar('-');
-    x = -x;
-  }
-  if (x > 9)
-    write(x / 10);
-  putchar(x % 10 + '0');
-}
-
-int main(int argc, char *argv[]) {
-  write(123);
-  return 0;
-}
 ```

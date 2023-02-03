@@ -1,21 +1,24 @@
 ---
+
 title: Linux下使用acme.sh 配置https 免费证书
 date: 2023-01-23 22:57  
-tags: []  
+tags: [linux,acme,cert]  
 source: https://www.cnblogs.com/-mrl/p/10601817.html
+
 ---
+
 # acme.sh
 
->简单来说acme.sh 实现了 acme 协议, 可以从 let‘s encrypt 生成免费的证书。  
->acme.sh 有以下特点：  
->一个纯粹用Shell（Unix shell）语言编写的ACME协议客户端。  
->完整的ACME协议实施。 支持ACME v1和ACME v2 支持ACME v2通配符证书  
->简单，功能强大且易于使用。你只需要3分钟就可以学习它。  
->Let's Encrypt免费证书客户端最简单的shell脚本。  
->纯粹用Shell编写，不依赖于python或官方的Let's Encrypt客户端。  
->只需一个脚本即可自动颁发，续订和安装证书。 不需要root/sudoer访问权限。  
->支持在Docker内使用，支持IPv6
-github链接：[https://github.com/Neilpang/acme.sh]
+> 简单来说acme.sh 实现了 acme 协议, 可以从 let‘s encrypt 生成免费的证书。  
+> acme.sh 有以下特点：  
+> 一个纯粹用Shell（Unix shell）语言编写的ACME协议客户端。  
+> 完整的ACME协议实施。 支持ACME v1和ACME v2 支持ACME v2通配符证书  
+> 简单，功能强大且易于使用。你只需要3分钟就可以学习它。  
+> Let's Encrypt免费证书客户端最简单的shell脚本。  
+> 纯粹用Shell编写，不依赖于python或官方的Let's Encrypt客户端。  
+> 只需一个脚本即可自动颁发，续订和安装证书。 不需要root/sudoer访问权限。  
+> 支持在Docker内使用，支持IPv6
+> github链接：[https://github.com/Neilpang/acme.sh]
 
 **本文记录了我在把网站从HTTP升级到 HTTPS ，申请和安装SSL证书路上踩过的几个坑。**
 
@@ -191,7 +194,7 @@ service nginx force-reload
 ```
 
 7. 更新 acme.sh  
-目前由于 acme 协议和 letsencrypt CA 都在频繁的更新, 因此 acme.sh 也经常更新以保持同步.
+   目前由于 acme 协议和 letsencrypt CA 都在频繁的更新, 因此 acme.sh 也经常更新以保持同步.
 
 升级 acme.sh 到最新版 :
 
@@ -210,7 +213,7 @@ acme.sh --upgrade --auto-upgrade 0
 ```
 
 6. 出错怎么办：  
-如果出错, 请添加 debug log：
+   如果出错, 请添加 debug log：
 
 ```bash
 acme.sh --issue ..... --debug 
@@ -227,6 +230,7 @@ acme.sh --issue ..... --debug 2
 ```bash
 acme.sh --list  
 ```
+
 删除证书
 
 acme.sh remove Main Domain(证书的主域名，上述证书列表中可看见)
@@ -247,4 +251,5 @@ acme.sh remove Main Domain(证书的主域名，上述证书列表中可看见)
 [https://github.com/Neilpang/acme.sh]: https://github.com/Neilpang/acme.sh
 
 ## reference
+
 [用acme.sh帮你免费且自动更新的HTTPS证书，省时又省力](https://zhuanlan.zhihu.com/p/347064501)

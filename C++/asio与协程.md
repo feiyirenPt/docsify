@@ -4,7 +4,7 @@ date: 2023-01-11 17:36
 tags: [asio c++20]  
 source: https://blog.csdn.net/jkddf9h8xd9j646x798t/article/details/128517850
 ---
-# [C++] [[asio]] + C++20协程
+# [[asio]]协程
 ## 0. 前言
 
 自C++20为止, C++主要有以下几种风格的[[协程]]
@@ -15,13 +15,13 @@ source: https://blog.csdn.net/jkddf9h8xd9j646x798t/article/details/128517850
 
 其中最优雅的当属仿线程风格, 可以在一个函数中连贯地将数据流处理流程写完.
 
-然而, C++20语言标准直接提供的标准协程是多方大佬撕逼后妥协的结果, 高度强调[自由度](https://so.csdn.net/so/search?q=%E8%87%AA%E7%94%B1%E5%BA%A6&spm=1001.2101.3001.7020), 并不适合直接拿来使用.
+然而, C++20语言标准直接提供的标准协程是多方大佬撕逼后妥协的结果, 高度强调自由度, 并不适合直接拿来使用.
 
-[boost](https://so.csdn.net/so/search?q=boost&spm=1001.2101.3001.7020)中有几个库实现有类似协程的功能, 比如
+boost中有几个库实现有类似协程的功能, 比如
 
 -   context: 提供执行栈切换的功能, 但不负责值的传递.
 -   coroutine, coroutine2: 仿线程风格
--   [[asio]]: 正在适配C++20协程
+-   asio: 正在适配C++20协程
 
 本文介绍如何借助asio使用C++20协程
 
@@ -41,20 +41,20 @@ asio对协程的支持分两个阶段
 
 首先包含头文件asio.hpp来使用下面的东西.
 
-```
+```cpp
 #include <asio.hpp>
 using namespace asio;
 ```
 
 使用io_context可以创建一个没有线程池的纯调度上下文. 然后可以使用post或dispatch添加一项可执行任务.
 
-```
+```cpp
 io_context ctx;
 post(ctx, []{
-cout << "hello" << endl;
+    cout << "hello" << endl;
 });
 dispatch(ctx, []{
-cout << "world" << endl;
+    cout << "world" << endl;
 });
 ```
 
@@ -63,27 +63,27 @@ post和dispatch是实现异步的原始接口.
 
 ### 1.2 awaitable协程
 
-使用co\_spawn来将awaitable协程包装成任务.
+使用co_spawn来将awaitable协程包装成任务.
 
-```
+```cpp
 co_spawn(ctx, []() -> awaitable<void> {
-co_return;
+    co_return;
 }, detached);
 ```
 
 最后在适合的线程内调用`ctx.run()`来启动协程
 
-```
+```cpp
 ctx.run();
 ```
 
 awaitable协程对外只能有返回值`co_return`, `awaitable<T>`中`T`的类型就是`co_return`的返回值的类型. 对内可以用`co_await`等待其他东西的结果.
 
-### 1.3 co\_await
+### 1.3 co_await
 
 以一个可await的东西timer为例
 
-```
+```cpp
 using namespace std::chrono_literals;
 io_context ctx;
 steady_timer timer(ctx, 3s); // 3秒倒计时
@@ -98,25 +98,25 @@ cout << "hello" << endl;
 }, detached);
 ```
 
-### 1.4 任意和全部co\_await
+### 1.4 任意和全部co_await
 
 如果有多个可await的对象, 而只想等待其中一个, 或全部, 可使用awaitable\_operators内的运算符
 
-```
+```cpp
 #include <asio/experimental/awaitable_operators.hpp>
 using namespace std::experimental::awaitable_operators;
 ```
 
 有两个timer
 
-```
+```cpp
 steady_timer timer1(ctx, 1s);
 steady_timer timer2(ctx, 2s);
 ```
 
 协程内, 使用||运算符来等待任意一个完成, 用&&运算符来等待全部完成.
 
-```
+```cpp
 co_spawn(ctx, [&]() -> awaitable<void> {
 co_await (timer1.async_wait(use_awaitable) || timer2.async_wait(use_awaitable));
 cout << "hello" << endl;
@@ -127,7 +127,7 @@ cout << "hello" << endl;
 那么一般情况下`co_await (co1 || co2)`得到`std::variant<T, U>`类型的值.  
 `co_await (co1 && co2)`得到`std::tuple<T, U>`类型的值.
 
-```
+```cpp
 awaitable<int> f() { co_return 123; }
 awaitable<std::string> g() { co_return "hello"; }
 awaitable<void> h() { co_return; }
@@ -143,10 +143,10 @@ std::variant<int, std::string, std::monostate> result2 = co_await (f() || g() ||
 
 ### 1.5 线程池
 
-io\_context不含执行器, 需要自行创建线程, 或直接使用主线程来启动其任务循环.  
-可以使用asio提供的线程池thread\_pool来取代没有线程的io\_context.
+io_context不含执行器, 需要自行创建线程, 或直接使用主线程来启动其任务循环.  
+可以使用asio提供的线程池thread_pool来取代没有线程的io_context.
 
-```
+```cpp
 thread_pool ctx(4); // 4线程线程池
 ...
 co_spawn(ctx, []() -> awaitable<void> {
@@ -156,38 +156,38 @@ co_spawn(ctx, []() -> awaitable<void> {
 ctx.join();
 ```
 
-## 2\. coro
+## 2. coro
 
 ### 2.1 启动
 
-相比于只能有返回值的awaitable, coro是真正的通用协程, 不仅可以co\_return, 也可以co\_yield.  
-co\_yield可以对外发送值, 也可以从外接收值.
+相比于只能有返回值的awaitable, coro是真正的通用协程, 不仅可以co\_return, 也可以co_yield.  
+co_yield可以对外发送值, 也可以从外接收值.
 
-```
+```cpp
 coro<std::string(double), int> co1(any_io_executor exec) {
 double recv = co_yield "hello";
-std::cout << "co recv: " << recv << std::endl;
-co_return 123;
+    std::cout << "co recv: " << recv << std::endl;
+    co_return 123;
 }
 ```
 
 可以用coro协程启动coro协程
 
-```
+```cpp
 coro<void> co2(any_io_executor exec) {
-auto c1 = co1(exec);
-std::string str = co_await c1(233.0);
-co_return;
+    auto c1 = co1(exec);
+    std::string str = co_await c1(233.0);
+    co_return;
 }
 ```
 
 也可以用awaitable协程启动coro协程, 使用async\_resume来调起coro协程
 
-```
+```cpp
 awaitable<void> co3() {
-auto exec = co_await this_coro::executor;
-auto c1 = co1(exec);
-std::optional<std::string> res = co_await c1.async_resume(123.0, use_awaitable);
+    auto exec = co_await this_coro::executor;
+    auto c1 = co1(exec);
+    std::optional<std::string> res = co_await c1.async_resume(123.0,use_awaitable);
 }
 ```
 
@@ -195,9 +195,9 @@ std::optional<std::string> res = co_await c1.async_resume(123.0, use_awaitable);
 
 coro协程一般要求形参里要有`any_io_executor`或是一个有`get_executor()`方法的对象, 如`io_context`或`tcp::socket`等.
 
-```
+```cpp
 awaitable<void> co4(io_context& ctx) {
-co_return;
+    co_return;
 }
 ```
 
@@ -205,10 +205,10 @@ co_return;
 
 但如果coro协程是作为方法定义的, 其中所在的类内有get\_executor方法, 那么上述形参可以放宽为自动从所在类中获取, 从而免于传入.
 
-```
+```cpp
 struct MyCoro : public io_context {
 coro<int> co5() {
-co_yield 123;
+    co_yield 123;
 }
 }
 ```
@@ -218,14 +218,14 @@ co_yield 123;
 1.24.0版本的asio在编译时, 会出现类似"->"类型错误的提示, 原因是源码中在捕获包中使用了和类名coro相同的变量名coro, 导致编译错误  
 将变量名coro改成coro以外的名字即可修复
 
-## 3\. 回调包装
+## 3. 回调包装
 
 ### 3.1 C++式回调
 
 将回调接口改造成协程接口是很常见的将老接口接入协程的方式.  
 设有一个C++式回调接口
 
-```
+```cpp
 template<typename Callback>
 void callback(int arg, Callback func) {
     std::thread([func = std::move(func), arg]() mutable {
@@ -237,7 +237,7 @@ void callback(int arg, Callback func) {
 
 如下代码可将其包装为asio式接口
 
-```
+```cpp
 template<completion_token_for<void(int)> CompletionToken>
 auto callbackWrapper(int arg, CompletionToken&& token) {
 // 进行返回方式变换, 允许根据token变换返回方式, 使得可选择use_coro, use_awaitable等返回方式
@@ -256,13 +256,13 @@ auto callbackWrapper(int arg, CompletionToken&& token) {
 }
 ```
 
-在awaitable协程中可用co\_await
+在awaitable协程中可用co_await
 
-```
+```cpp
 int res = co_await callbackWrapper(123, use_awaitable);
 ```
 
 ### 3.2 C式回调
 
-可以下载asio源码, 找到examples/cpp20/operations/c\_callback\_wrapper.cpp文件自行浏览, 需要补充的内容相当多, 此处暂略  
+可以下载asio源码, 找到examples/cpp20/operations/c_callback_wrapper.cpp文件自行浏览, 需要补充的内容相当多, 此处暂略  
 该方法要求回调式接口中能传入发起请求时的一个上下文指针, 如不能则只能使用全局变量

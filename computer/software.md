@@ -11,7 +11,10 @@ tags: software
 - [opencv一些图像处理笔记](https://note.youdao.com/s/BvE12mkg) 
 - [Linux系统笔记](https://note.youdao.com/s/dWEs6IeH) 
 - [mysql数据库笔记](https://note.youdao.com/s/VTmB0i7G) 
-
+---
+- 速查手册:
+    - [quickref.me](https://quickref.me/)
+    - [quickref.cn](https://quickref.cn/)
 ---
 
 - [免费建站资源](https://free.zhelper.net/freevps/)
@@ -32,7 +35,7 @@ tags: software
 | git工具      | gitKraken                                         |
 | 终端文件管理 | lf ranger  broot(tree like)                       |
 | code search  | sourcegraph.com                                   |
-| blog         | hexo [docsify][2]                                 |
+| blog         | hexo docsify                                      |
 | UML          | plantuml mermaid  Umbrello  starUML               |
 | 代码图片     | silicon                                           |
 | 终端录制     | asciinema  terminalizer(npm)                      |
@@ -46,6 +49,7 @@ tags: software
 | computer       |                                                                      |
 | -------------- | -------------------------------------------------------------------- |
 | 效率工具       | utools powertoys DevToys(winget)                                     |
+| email          | MarkdownOutlook(winget)                                              |
 | pdf编辑        | xodo pdf-xchange  Drawboard                                          |
 | 数据同步       | cwRsync syncthings rsync webdav                                      |
 | 显示器亮度调节 | Monitorian(wineget)                                                  |
@@ -62,13 +66,8 @@ tags: software
 | 手机电脑互联   | intel unison                                                         |
 | 画图           | excalidraw                                                           |
 | ai             | Tome（制作ppt）Quillbot(改写文章）Superhuman(起草电子邮件）          |
-| rss            | Fluent-Reader  [Focus][3] feeder innoreader rsshub                   |
+| rss            | Fluent-Reader  Focus feeder innoreader rsshub                   |
 | 重装系统       | Cmzprep B                                                            |
 | ai             | chatgpt Tome(制作ppt） Quillbot(改写文章） Superhuman(起草电子邮件） |
-| b站直链获取    | [贝贝bilibilil][1]                                                   |
+| b站直链获取    | 贝贝bilibilil                                                        |
 | 屏幕录制       | captura obs                                                          |
-
-
-[1]: https://xbeibeix.com/api/bilibili/
-[2]: https://docsify.js.org/#/zh-cn/
-[3]: https://www.ihewro.com/archives/948/

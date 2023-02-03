@@ -21,7 +21,7 @@ source: https://www.jianshu.com/p/421c679b7eca
 
 ## outlook邮箱登录
 
-点击添加账户，输入邮箱名，并勾选手动设置
+点击添加账户，输入邮箱名，并勾选手动设置  
 ![][fig6]
 ![][fig7]
 
