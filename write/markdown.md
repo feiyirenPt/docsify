@@ -357,7 +357,7 @@ $\sideset{^1_2}{^3_4}{\underset{6}\bigotimes}$
 ### 3、括号和分隔符
 
 代码:
-```text
+```txt
 $\langle\quad\rangle\quad\lceil\quad\rceil\quad\lfloor\quad\rfloor\quad\lbrace\quad\rbrace\quad\lVert\quad\rVert$
 $f(x,y,z)=3y^2z\left(3+\dfrac{7x+5}{1+y^2}\right)$
 $\left.\dfrac{\mathrm{d}u}{\mathrm{d}x}\right|_{x=0}$
@@ -648,6 +648,7 @@ $$
 $\color{#rgb}{文字}$    (注:其中r、g、b可以输入0~9和a~f来分别表示红色、绿色和蓝色的纯度)
 ```
 
+```latex
 | 输入 | 输出              | 输入 | 输出              | 输入 | 输出              | 输入 | 输出              |
 | ---- | ----------------- | ---- | ----------------- | ---- | ----------------- | ---- | ----------------- |
 | #000 | $\color{#000}{color}$ | #005 | $\color{#005}{color}$ | #00A | $\color{#00A}{color}$ | #00F | $\color{#00F}{color}$ |
@@ -666,6 +667,7 @@ $\color{#rgb}{文字}$    (注:其中r、g、b可以输入0~9和a~f来分别表�
 | #5F0 | $\color{#5F0}{color}$ | #5F5 | $\color{#5F5}{color}$ | #5FA | $\color{#5FA}{color}$ | #5FF | $\color{#5FF}{color}$ |
 | #AF0 | $\color{#AF0}{color}$ | #AF5 | $\color{#AF5}{color}$ | #AFA | $\color{#AFA}{color}$ | #AFF | $\color{#AFF}{color}$ |
 | #FF0 | $\color{#FF0}{color}$ | #FF5 | $\color{#FF5}{color}$ | #FFA | $\color{#FFA}{color}$ | #FFF | $\color{#FFF}{color}$ |
+```
 
 #### ③删除线
 

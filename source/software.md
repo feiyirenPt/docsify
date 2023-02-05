@@ -3,26 +3,6 @@ title: software
 date: 2022-10-10  
 tags: software  
 ---
-- [java基础笔记](https://note.youdao.com/s/SSdkdYQE) 
-- [C++基础笔记](https://note.youdao.com/s/GCkhfFku) 
-- [python基础笔记](https://note.youdao.com/s/bz0Pc0Fp) 
-- [前端CSS3基础笔记](https://note.youdao.com/s/Of4EqNGv) 
-- [前端HTML5基础笔记](https://note.youdao.com/s/B1g6RSq7) 
-- [opencv一些图像处理笔记](https://note.youdao.com/s/BvE12mkg) 
-- [Linux系统笔记](https://note.youdao.com/s/dWEs6IeH) 
-- [mysql数据库笔记](https://note.youdao.com/s/VTmB0i7G) 
----
-- 速查手册:
-    - [quickref.me](https://quickref.me/)
-    - [quickref.cn](https://quickref.cn/)
----
-
-- [免费建站资源](https://free.zhelper.net/freevps/)
-- **paas**
-    - [heroku](https://www.heroku.com/)
-    - [oktet](https://www.okteto.com/)
-    - [play with docker](https://labs.play-with-docker.com/)                                                    
-
 
 | coding       |                                                   |
 | ------------ | ------------------------------------------------- |

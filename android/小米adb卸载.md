@@ -1,7 +1,7 @@
 ---
-title: (23 封私信 / 80 条消息) 小米手机用ADB卸载哪些软件不会卡米？ - 知乎  
+title: 小米手机用ADB卸载哪些软件
 date: 2023-01-28 14:52  
-tags: [小米科技,米柚（MIUI）,小米手机]  
+tags: [小米科技,MIUI,小米手机]  
 source: https://www.zhihu.com/question/512681245/answer/2320191705?utm_campaign=&utm_medium=social&utm_oi=1270684969300271104&~  
 ---
 
