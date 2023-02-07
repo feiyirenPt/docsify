@@ -17,8 +17,6 @@
 <div align="left">  
 
   
-![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=jyf-111&repo=cpp&bg_color=000000&text_color=718096)
-
 ![My stats](https://github-readme-stats.vercel.app/api?username=jyf-111&theme=calm&show_icons=true)
 
 ![My status](https://github-readme-stats.vercel.app/api/top-langs/?username=jyf-111&hide=html,css,Jupyter+Notebook,ruby,javascript&theme=calm&langs_count=6)

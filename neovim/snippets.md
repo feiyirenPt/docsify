@@ -1,5 +1,5 @@
 ---
-title: snippet
+title: snippet  
 date: 2023-01-31 12:19:47  
 tags: neovim  
 ---

@@ -1,5 +1,5 @@
 ---
-title: wsl与win剪贴板互通
+title: wsl与win剪贴板互通  
 date: 2023-1-15 23:49:09  
 tags: neovim  
 ---

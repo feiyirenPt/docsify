@@ -1,5 +1,5 @@
 ---
-title: toggleterm设置powershell
+title: toggleterm设置powershell  
 date: 2023-1-15 23:52:09  
 tags: neovim  
 ---

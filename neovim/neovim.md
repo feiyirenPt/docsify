@@ -1,5 +1,5 @@
 ---
-title: neovim
+title: neovim  
 date: 2022-12-21 20:32:47  
 tags: neovim  
 ---

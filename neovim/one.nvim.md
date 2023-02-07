@@ -1,8 +1,8 @@
 ---
-title: 我的 Neovim 配置框架：one.nvim - 知乎  
+title: 我的 Neovim 配置框架：one.nvim  
 date: 2023-01-19 23:12  
 tags: [NeoVim]  
-source: https://zhuanlan.zhihu.com/p/583324604
+source: https://zhuanlan.zhihu.com/p/583324604  
 ---
 分享一个我用 Lua 编写的 Neovim 一体化配置框架。早用 lua 早日摆脱 vimscript。
 

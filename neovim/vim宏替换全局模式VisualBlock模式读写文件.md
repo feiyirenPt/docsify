@@ -1,8 +1,8 @@
 ---
-title: vim【宏、替换、全局模式、Visual Block模式、读写文件】 - 简书  
+title: vim【宏、替换、全局模式、Visual Block模式、读写文件】  
 date: 2023-01-20 10:33  
-tags: []  
-source: https://www.jianshu.com/p/3c34c189fc67
+tags: [vim]  
+source: https://www.jianshu.com/p/3c34c189fc67  
 ---
 ## vim【宏、替换、全局模式、Visual Block模式、读写文件】
 
