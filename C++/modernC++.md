@@ -10,4 +10,6 @@ tags: C++
     [在类内部获取类的智能指针](https://blog.csdn.net/oldmtn/article/details/26268601)
 
 ## C++ 17
-- std::variant
+- std::variant<T,U,...>
+- std::optional<T>
+- std::any

@@ -1,3 +1,3 @@
 * [Home](/)
 * [excalidraw](https://www.wycjyf.live/excalidraw/)
-* [football](https://www.wycjyf.live/football/)
+* [football](https://b23.tv/bWdJKNH)

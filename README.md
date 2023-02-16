@@ -22,6 +22,3 @@
 ![My status](https://github-readme-stats.vercel.app/api/top-langs/?username=jyf-111&hide=html,css,Jupyter+Notebook,ruby,javascript&theme=calm&langs_count=6)
 
 </div>
-
-## 🏆 Github Profile Trophy
-<img src="https://github-profile-trophy.vercel.app/?username=jyf-111&column=7"/>
