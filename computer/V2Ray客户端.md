@@ -1,0 +1,83 @@
+---
+title: V2Ray客户端工具大全备用下载 | V2Ray  
+date: 2023-02-17 22:14  
+tags: []  
+source: https://v2sx.github.io/V2Ray/?msclkid=fdab7023d13011ec91bf0dad903ba537  
+---
+## V2Ray客户端工具大全备用下载
+
+## 微软Windows
+
+<table><tbody><tr><td><a href="https://github.com/V2Sx/V2Ray/raw/master/v2rayN-Core.zip">V2RayN</a></td><td><a href="https://github.com/2dust/v2rayN/releases">V2RayN-GitHub</a></td></tr></tbody></table>
+
+<table><tbody><tr><td><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.8.1/Clash.for.Windows.Setup.0.8.1.exe">Clash</a></td><td><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">Clash-GitHub</a></td></tr></tbody></table>
+
+## 苹果iOS
+
+<table><tbody><tr><td><a href="https://appledi.com/Shadowrocket/">Shadowrocket小火箭在线安装</a></td><td><a href="https://appledi.com/">苹果美区账号 APPLE ID 免费账号共享</a></td></tr></tbody></table>
+
+<table><tbody><tr><td><a href="https://itunes.apple.com/us/app/kitsunebi-proxy-utility/id1446584073?mt=8">Kitsunebi</a></td><td><a href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8">Shadowrocket</a></td><td><a href="https://itunes.apple.com/us/app/quantumult/id1252015438?mt=8">Quantumult</a></td><td><a href="https://itunes.apple.com/us/app/pepi/id1283082051?mt=8">Pepi</a></td><td><a href="https://itunes.apple.com/us/app/i2ray/id1445270056?mt=8">i2Ray</a></td></tr></tbody></table>
+
+## 安卓Android
+
+[v2rayNG]
+
+<table><tbody><tr><td><a href="https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android">Kitsunebi-APK Pure</a></td><td><a href="https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android&amp;hl=en_US">Kitsunebi-Google Play Store</a></td></tr></tbody></table>
+
+<table><tbody><tr><td><a href="https://github.com/V2Sx/V2Ray/raw/master/bifrostv-v0.6.8.apk">BifrostV</a></td><td><a href="https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv">BifrostV-Google Play Store</a></td><td><a href="https://apkpure.com/bifrostv/com.github.dawndiy.bifrostv">BifrostV-APK Pure</a></td></tr></tbody></table>
+
+<table><tbody><tr><td><a href="https://github.com/V2Sx/V2Ray/raw/master/app-arm64-v8a-release.apk">V2RayNG-arm64-v8a</a></td><td><a href="https://github.com/V2Sx/V2Ray/raw/master/app-armeabi-v7a-release.apk">V2RayNG-armeabi-v7a</a></td><td><a href="https://github.com/V2Sx/V2Ray/raw/master/app-x86-release.apk">V2RayNG-x86</a></td><td><a href="https://github.com/V2Sx/V2Ray/raw/master/app-x86_64-release.apk">V2RayNG-x86_64</a></td></tr></tbody></table>
+
+<table><tbody><tr><td><a href="https://apkpure.com/v2rayng/com.v2ray.ang">V2RayNG-APK Pure</a></td><td><a href="https://github.com/2dust/v2rayNG/releases">V2RayNG-GitHub</a></td><td><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang">V2RayNG-Google Play Store</a></td></tr></tbody></table>
+
+## 苹果Mac
+
+<table><tbody><tr><td><a href="https://github.com/V2Sx/V2Ray/raw/master/V2rayU-1.4.1.dmg">V2RayU</a></td><td><a href="https://github.com/yanue/V2rayU/releases">V2RayU-GitHub</a></td></tr></tbody></table>
+
+<table><tbody><tr><td><a href="https://github.com/V2Sx/V2Ray/raw/master/ClashX.dmg">ClashX</a></td><td><a href="https://github.com/yichengchen/clashX/releases">ClashX-GitHub</a></td></tr></tbody></table>
+
+<table><tbody><tr><td><a href="https://github.com/V2Sx/V2Ray/raw/master/V2RayX.app.zip">V2RayX</a></td><td><a href="https://github.com/Cenmrev/V2RayX/releases">V2RayX-GitHub</a></td></tr></tbody></table>
+
+## 备用云盘下载
+
+[备用云盘下载 - 点击这里]
+
+## V2Ray使用帮助
+
+[V2Ray使用帮助]
+
+### [« 返回首页]
+
+[V2RayN]: https://github.com/V2Sx/V2Ray/raw/master/v2rayN-Core.zip
+[V2RayN-GitHub]: https://github.com/2dust/v2rayN/releases
+[Clash]: https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.8.1/Clash.for.Windows.Setup.0.8.1.exe
+[Clash-GitHub]: https://github.com/Fndroid/clash_for_windows_pkg/releases
+[Shadowrocket小火箭在线安装]: https://appledi.com/Shadowrocket/
+[苹果美区账号 APPLE ID 免费账号共享]: https://appledi.com/
+[Kitsunebi]: https://itunes.apple.com/us/app/kitsunebi-proxy-utility/id1446584073?mt=8
+[Shadowrocket]: https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8
+[Quantumult]: https://itunes.apple.com/us/app/quantumult/id1252015438?mt=8
+[Pepi]: https://itunes.apple.com/us/app/pepi/id1283082051?mt=8
+[i2Ray]: https://itunes.apple.com/us/app/i2ray/id1445270056?mt=8
+[v2rayNG]: https://github.com/2dust/v2rayNG/releases/download/1.1.15/v2rayNG_1.1.15.apk
+[Kitsunebi-APK Pure]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android
+[Kitsunebi-Google Play Store]: https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android&hl=en_US
+[BifrostV]: https://github.com/V2Sx/V2Ray/raw/master/bifrostv-v0.6.8.apk
+[BifrostV-Google Play Store]: https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv
+[BifrostV-APK Pure]: https://apkpure.com/bifrostv/com.github.dawndiy.bifrostv
+[V2RayNG-arm64-v8a]: https://github.com/V2Sx/V2Ray/raw/master/app-arm64-v8a-release.apk
+[V2RayNG-armeabi-v7a]: https://github.com/V2Sx/V2Ray/raw/master/app-armeabi-v7a-release.apk
+[V2RayNG-x86]: https://github.com/V2Sx/V2Ray/raw/master/app-x86-release.apk
+[V2RayNG-x86\_64]: https://github.com/V2Sx/V2Ray/raw/master/app-x86_64-release.apk
+[V2RayNG-APK Pure]: https://apkpure.com/v2rayng/com.v2ray.ang
+[V2RayNG-GitHub]: https://github.com/2dust/v2rayNG/releases
+[V2RayNG-Google Play Store]: https://play.google.com/store/apps/details?id=com.v2ray.ang
+[V2RayU]: https://github.com/V2Sx/V2Ray/raw/master/V2rayU-1.4.1.dmg
+[V2RayU-GitHub]: https://github.com/yanue/V2rayU/releases
+[ClashX]: https://github.com/V2Sx/V2Ray/raw/master/ClashX.dmg
+[ClashX-GitHub]: https://github.com/yichengchen/clashX/releases
+[V2RayX]: https://github.com/V2Sx/V2Ray/raw/master/V2RayX.app.zip
+[V2RayX-GitHub]: https://github.com/Cenmrev/V2RayX/releases
+[备用云盘下载 - 点击这里]: https://yun.v2w.org/
+[V2Ray使用帮助]: https://v2sx.github.io/Help/
+[« 返回首页]: https://v2sx.github.io/Help/

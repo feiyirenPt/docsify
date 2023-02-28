@@ -6,6 +6,9 @@ tags:
 
 ## source
 
+- 博客
+  [C++,lua,webgl](https://dens.website/)
+
 - 速查手册:
     - [quickref.me](https://quickref.me/)
     - [quickref.cn](https://quickref.cn/)

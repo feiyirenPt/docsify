@@ -69,6 +69,25 @@ static char str1[128] = "";
 ImGui::InputTextWithHint("input text (w/ hint)", "enter text here", str1, IM_ARRAYSIZE(str1));
 ```
 
+- table
+```cpp
+if (ImGui::BeginTable("split", 3))
+        {
+            ImGui::TableNextColumn(); ImGui::Checkbox("No titlebar", &no_titlebar);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No scrollbar", &no_scrollbar);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No menu", &no_menu);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No move", &no_move);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No resize", &no_resize);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No collapse", &no_collapse);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No close", &no_close);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No nav", &no_nav);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No background", &no_background);
+            ImGui::TableNextColumn(); ImGui::Checkbox("No bring to front", &no_bring_to_front);
+            ImGui::TableNextColumn(); ImGui::Checkbox("Unsaved document", &unsaved_document);
+            ImGui::EndTable();
+        }
+```
+
 ## 常用控件
 
 | 控件名                  | 用途                     |
@@ -90,4 +109,5 @@ ImGui::InputTextWithHint("input text (w/ hint)", "enter text here", str1, IM_ARR
 | CheckBox                | 带方框的选择框           |
 
 ### reference
-[ImGui渲染流程及常用控件总结](https://blog.csdn.net/rasine_liu/article/details/127624805)
+- [ImGui渲染流程及常用控件总结](https://blog.csdn.net/rasine_liu/article/details/127624805)
+- [doc](https://oprypin.github.io/crystal-imgui/ImGui.html)

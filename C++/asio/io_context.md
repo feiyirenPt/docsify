@@ -59,7 +59,7 @@ socket.connect(server_endpoint, ec);
 
 其中 your_completion_handler为一个回调函数
 
-1.  I / O对象将请求转发到io_context。
+1.  I/O对象将请求转发到io_context。
 2.  io上下文向操作系统发出应该启动异步连接的信号  
     ![在这里插入图片描述][fig2]
 3.  操作系统通过将结果放在一个队列上来指示连接操作已经完成，等待io上下文拾取。
@@ -67,7 +67,3 @@ socket.connect(server_endpoint, ec);
 5.  在对io上下文::run()的调用中，io上下文将操作的结果取出队列，将其转换为错误代码，然后将其传递给完成处理程序（回调函数）
 
 [fig2]: https://img-blog.csdnimg.cn/2020061722253167.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTcyNjMx,size_16,color_FFFFFF,t_70
-
-[CC 4.0 BY-SA]: http://creativecommons.org/licenses/by-sa/4.0/
-[Boost]: https://so.csdn.net/so/search?q=Boost&spm=1001.2101.3001.7020
-[socket]: https://so.csdn.net/so/search?q=socket&spm=1001.2101.3001.7020
