@@ -3,6 +3,25 @@ title: imgui
 date: 2022-01-07  
 tags: C++  
 ---
+
+## font
+- 微软雅黑.ttf可以支持中文
+- Jetbrain的字体似乎不可以
+
+?> 确保传入imgui的是utf-8
+
+?> unicode是字符编码集合,utf-*是存储方式
+
+[官方文档](https://github.com/ocornut/imgui/blob/master/docs/FONTS.md)
+
+```cpp
+io.Fonts->AddFontFromFileTTF(R"(font/微软雅黑.ttf)", 30.0f, nullptr,
+io.Fonts->GetGlyphRangesChineseFull());
+io.Fonts->Build();
+```
+
+
+## 常用组件
 - text
 ```cpp
 ImGui::Text("Hello, world!");

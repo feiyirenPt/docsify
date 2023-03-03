@@ -4,23 +4,24 @@ date: 2022-10-10
 tags: software  
 ---
 
-| coding       |                                                   |
-| ------------ | ------------------------------------------------- |
-| 文档         | zeal devdocs cheat.sh                             |
-| linux命令    | busybox gow awk jid jq ntop   dd  gdu  tcping bat |
-| ip 查询      | nali                                              |
-| 扫描主机     | nmap                                              |
-| dotfile      | yadm stow scoop                                   |
-| gist         | lepton nap                                        |
-| git工具      | gitKraken                                         |
-| 终端文件管理 | lf ranger  broot(tree like)                       |
-| code search  | sourcegraph.com                                   |
-| blog         | hexo docsify                                      |
-| UML          | plantuml mermaid  Umbrello  starUML               |
-| 代码图片     | silicon                                           |
-| 终端录制     | asciinema  terminalizer(npm)                      |
-| 翻译         | fanyi(npm)                                        |
-| paas         | okteto goodrain                                   |
+| coding       |                                                |
+| ------------ | ---------------------------------------------- |
+| 文档         | zeal devdocs cheat.sh                          |
+| linux命令    | busybox gow awk jid jq ntop dd gdu  tcping bat |
+| ip 查询      | nali                                           |
+| 扫描主机     | nmap                                           |
+| dotfile      | yadm stow scoop                                |
+| gist         | lepton nap                                     |
+| git工具      | gitKraken                                      |
+| 终端文件管理 | lf ranger  broot(tree like)                    |
+| code search  | sourcegraph.com                                |
+| blog         | hexo docsify                                   |
+| UML          | plantuml mermaid  Umbrello  starUML            |
+| 代码图片     | silicon                                        |
+| 终端录制     | asciinema  terminalizer(npm)                   |
+| 翻译         | fanyi(npm)                                     |
+| paas         | okteto goodrain                                |
+| PPT          | reveal.js code-surfer slidev                   |
 
 | game         |                      |
 | ------------ | -------------------- |
@@ -44,7 +45,6 @@ tags: software
 | 注册清理       | wise register cleaner                                                                    |
 | 手机电脑互联   | intel unison                                                                             |
 | 画图           | excalidraw                                                                               |
-| ai             | Tome（制作ppt）Quillbot(改写文章）Superhuman(起草电子邮件）                              |
 | rss            | Fluent-Reader  Focus feeder innoreader rsshub 烟*红(chrome)                              |
 | 重装系统       | Cmzprep B                                                                                |
 | ai             | Wolfram alpha(数学) chatgpt Tome(制作ppt） Quillbot(改写文章） Superhuman(起草电子邮件） |
