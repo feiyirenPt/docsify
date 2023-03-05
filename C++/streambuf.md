@@ -5,9 +5,7 @@ tags: [C++,streambuf]
 source: https://blog.csdn.net/itzyjr/article/details/123642819  
 ---
 
-## ❥关于C++之streambuf
-
-![][fig2]
+## 关于C++之streambuf
 
 ```cpp
 typedef basic_streambuf<char> streambuf;typedef basic_streambuf<wchar_t> wstreambuf;
