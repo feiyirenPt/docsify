@@ -1,6 +1,6 @@
 ---
-title: indows server上安装支持linux容器的docker
-date: 2023-01-11 23:35
+title: indows server上安装支持linux容器的docker  
+date: 2023-01-11 23:35  
 tags: [ azure,windows server,v2ray ]  
 source: https://www.cnblogs.com/smallidea/p/16307782.html
 ---

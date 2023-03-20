@@ -14,11 +14,11 @@
     <a href="https://www.archlinux.org/"> <img src="https://img.shields.io/badge/arch-%231793d1.svg?&style=for-the-badge&logo=arch-linux&logoColor=white"/> </a>
 <p>
 
-<div align="left">  
 
-  
-![My stats](https://github-readme-stats.vercel.app/api?username=jyf-111&theme=calm&show_icons=true)
+![](https://github-readme-stats.vercel.app/api/wakatime?username=jyf-111&api_domain=wakapi.dev&bg_color=2D3748&title_color=2F855A&icon_color=2F855A&text_color=ffffff&custom_title=Wakapi%20Week%20Stats&layout=compact)
 
-![My status](https://github-readme-stats.vercel.app/api/top-langs/?username=jyf-111&hide=html,css,Jupyter+Notebook,ruby,javascript&theme=calm&langs_count=6)
 
-</div>
+一道题做两三个小时是很正常的，甚至是做一天。大家一定要耐得住寂寞
+多打打广告的话比较健康 --yxc
+
+女朋友会骗你，算法不会骗你 --yxc

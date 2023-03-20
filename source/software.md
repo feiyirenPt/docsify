@@ -7,7 +7,7 @@ tags: software
 | coding       |                                                |
 | ------------ | ---------------------------------------------- |
 | 文档         | zeal devdocs cheat.sh                          |
-| 统计代码行数 | scc                                            |
+| 代码统计     | scc  wakatime                                  |
 | linux命令    | busybox gow awk jid jq ntop dd gdu  tcping bat |
 | ip 查询      | nali                                           |
 | 扫描主机     | nmap                                           |
@@ -23,7 +23,7 @@ tags: software
 | 翻译         | fanyi(npm)                                     |
 | paas         | okteto goodrain                                |
 | PPT          | reveal.js code-surfer slidev                   |
-| 跨语言调用 | swig | 
+| 跨语言调用   | swig                                           |
 
 | game         |                      |
 | ------------ | -------------------- |

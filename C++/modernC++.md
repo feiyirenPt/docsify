@@ -7,6 +7,8 @@ tags: C++
 # modernC++
 ## C++ 11
 - [std::enable_shared_from_this]
+- std::men_fn
+- std::function
 
 ## C++ 17
 - 结构化绑定[auto \[u, v\] = ms]
@@ -21,3 +23,7 @@ tags: C++
 
 ## C++20
 - std::format
+
+
+## reference
+[现代C++微软文档](https://learn.microsoft.com/zh-cn/cpp/cpp/welcome-back-to-cpp-modern-cpp)
