@@ -1,7 +1,7 @@
 ---
 title: VIM学习笔记 自动命令(autocmd)  
 date: 2023-01-18 10:25  
-tags: [Vim,Gvim,vim脚本]  
+tags: vim  
 source: https://zhuanlan.zhihu.com/p/98360630  
 ---
 自动命令，是在指定事件发生时自动执行的命令。利用自动命令可以将重复的手工操作自动化，以提高编辑效率并减少人为操作的差错。
