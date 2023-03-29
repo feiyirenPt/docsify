@@ -1,5 +1,5 @@
 ---
-title: Windows系统下的TCP参数优化 - 最初的幸福ever - 博客园  
+title: Windows系统下的TCP参数优化
 date: 2023-03-04 18:00  
 tags: [windows,tcp]  
 source: https://www.cnblogs.com/fczjuever/archive/2013/04/05/3000697.html  

@@ -6,6 +6,7 @@ tags: software
 
 | coding       |                                                |
 | ------------ | ---------------------------------------------- |
+| 网站服务器   | nginx althttpd                                 |
 | 文档         | zeal devdocs cheat.sh                          |
 | 代码统计     | scc  wakatime                                  |
 | linux命令    | busybox gow awk jid jq ntop dd gdu  tcping bat |
