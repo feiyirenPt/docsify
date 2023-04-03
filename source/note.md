@@ -1,8 +1,6 @@
----
-title: note  
-date: 2023-02-05 17:45  
-tags:   
----
+## 速查手册:
+    - [quickref.me](https://quickref.me/)
+    - [quickref.cn](https://quickref.cn/)
 
 ## note
 - [java基础笔记](https://note.youdao.com/s/SSdkdYQE) 
@@ -18,3 +16,7 @@ tags:
 
 ## blog
 - [机工社《C++20高级编程》作者](https://netcan.github.io/)
+- [C++,lua,webgl](https://dens.website/)
+
+
+

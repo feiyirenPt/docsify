@@ -1,8 +1,17 @@
----
-title: software  
-date: 2022-10-10  
-tags: software  
----
+## source
+- **Paas**
+    - [azure](https://azure.microsoft.com/)
+    - [heroku](https://www.heroku.com/)
+    - [okteto](https://www.okteto.com/)
+    - [play with docker](https://labs.play-with-docker.com/)
+    - [goodrain](https://www.goodrain.com/)
+    - [itfff](https://ifttt.com/)
+
+- **Issa**
+    - 阿里云
+    - 腾讯云
+    - 网易数帆
+
 
 | coding       |                                                |
 | ------------ | ---------------------------------------------- |
@@ -22,7 +31,6 @@ tags: software
 | 代码图片     | silicon                                        |
 | 终端录制     | asciinema  terminalizer(npm)                   |
 | 翻译         | fanyi(npm)                                     |
-| paas         | okteto goodrain                                |
 | PPT          | reveal.js code-surfer slidev                   |
 | 跨语言调用   | swig                                           |
 
